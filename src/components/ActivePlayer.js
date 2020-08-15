@@ -1,12 +1,10 @@
 import React from 'react';
-import reactDOM from 'react-dom';
 
 import './styles/activePlayer.css';
 
 
 function ActivePlayer(props){
 
-    const numberOfPlayers = props.numberOfPlayers;
     return(
         <div>
             <div className="active-player">

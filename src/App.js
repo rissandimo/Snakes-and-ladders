@@ -1,12 +1,16 @@
 import React, { Fragment } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import ActivePlayer from './components/ActivePlayer';
+import Board from './components/Board';
 
 function App() {
   return (
-    <ActivePlayer />
+    <Fragment>
+      <ActivePlayer />
+      <Board />
+    </Fragment>
+
   );
 }
 
