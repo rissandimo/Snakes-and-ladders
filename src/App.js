@@ -1,16 +1,12 @@
 import React, { Fragment } from 'react';
 import './App.css';
-
-import ActivePlayer from './components/ActivePlayer';
-import Board from './components/Board';
+import Container from './components/Container';
 
 function App() {
   return (
     <Fragment>
-      <ActivePlayer />
-      <Board />
+      <Container />
     </Fragment>
-
   );
 }
 
