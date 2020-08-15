@@ -18,11 +18,15 @@
 }
 
 #board{
+  align-items: center;
   background-color: blue;
   display: grid;
-  height: 260px;
+  grid-gap: 0.1rem;
   grid-template-columns: repeat(10, 1fr);
-  width: 500px;
+  height: 35rem;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 65rem;
 }
 
 .container{
@@ -52,6 +56,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 50px;
-  width: 49px;
+  height: 100px;
+  width: 100px;
 }
