@@ -41,7 +41,7 @@
 #board{
   background-color: blue;
   display: grid;
-  height: 500px;
+  height: 260px;
   grid-template-columns: repeat(10, 1fr);
   width: 500px;
 }
@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;;
+  flex-direction: column;
   height: 50px;
   width: 49px;
 }
