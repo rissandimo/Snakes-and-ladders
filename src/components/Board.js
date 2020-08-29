@@ -1,6 +1,5 @@
 import React from "react";
 
-import './styles/board.css';
 import Square from "./Square";
 
 function Board(){
