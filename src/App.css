@@ -1,10 +1,10 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.active-player{
+.active-player {
   border: 5px solid green;
   background-color: #dedede;
   border-radius: 20px;
@@ -17,7 +17,7 @@
   width: 100px;
 }
 
-#board{
+#board {
   align-items: center;
   background-color: blue;
   display: grid;
@@ -29,28 +29,41 @@
   width: 65rem;
 }
 
-.container{
+.container {
   display: grid;
-  grid-template-areas: 
-  'board active-player';
+  grid-template-areas: "board active-player";
   grid-gap: 1rem;
   margin-top: 2rem;
 }
 
-.player{
-  content: '';
+.dice-container {
+  position: relative;
+}
+
+.dice {
+  bottom: 10rem;
+  left: 2rem;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.player {
+  content: "";
   border-radius: 50px;
   height: 50px;
   width: 50px;
 }
-.player-1{
+.player-1 {
   background-color: blue;
 }
-.player-2{
+.player-2 {
   background-color: red;
 }
 
-.square{
+.square {
   background-color: #e09850;
   display: flex;
   align-items: center;
