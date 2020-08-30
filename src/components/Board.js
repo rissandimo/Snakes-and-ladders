@@ -2,6 +2,7 @@ import React from "react";
 
 import Square from "./Square";
 import Dice from "./Dice";
+import PlayerPiece from "./PlayerPiece";
 
 function Board() {
   return (
@@ -47,6 +48,8 @@ function Board() {
       <div className="dice-container">
         <Dice />
       </div>
+
+      <PlayerPiece />
     </>
   );
 }

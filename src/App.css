@@ -79,6 +79,14 @@
   background-color: red;
 }
 
+.player-piece{
+  background-color: blue;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  transform: translateX(61rem) translateY(-7rem);
+}
+
 .square {
   background-color: #e09850;
   display: flex;
