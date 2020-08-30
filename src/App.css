@@ -50,6 +50,22 @@
   border-radius: 25px;
 }
 
+.dice-logo{
+  border: 1px solid #000;
+  border-radius: 10px;
+  bottom: 15rem;
+  font-weight: bold;
+  left: 2rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  padding: 0.5rem;
+  position: absolute;
+}
+
+.dice-logo:active{
+  transform: scale(0.9);
+}
+
 .player {
   content: "";
   border-radius: 50px;

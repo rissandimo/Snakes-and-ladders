@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import "./../App.css";
 import img1 from "./../img/1.png";
 import img2 from "./../img/2.png";
@@ -36,8 +36,12 @@ export default function Dice() {
     }
   };
   return (
-    <div onClick={number}>
+    <Fragment>
+    <button className="dice-logo" onClick={number}>Roll Dice</button>
+    <div>
       <img className="dice" src={getImg}></img>
     </div>
+
+    </Fragment>
   );
 }
