@@ -43,14 +43,14 @@ function Board() {
         <Square number="8" /> <Square number="6" />
         <Square number="5" /> <Square number="4" /> <Square number="3" />{" "}
         <Square number="2" /> <Square number="1" />
+      <PlayerPiece color="blue" />
+      <PlayerPiece color="red" />
       </div>
 
       <div className="dice-container">
         <Dice />
       </div>
 
-      <PlayerPiece color="blue" />
-      <PlayerPiece color="red" />
     </>
   );
 }

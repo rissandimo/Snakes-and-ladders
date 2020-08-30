@@ -26,6 +26,7 @@
   height: 35rem;
   justify-content: center;
   padding: 0.2rem;
+  position: relative;
   width: 65rem;
 }
 
@@ -86,13 +87,17 @@
 }
 
 .player-piece.blue{
-  background-color: blue;
-  transform: translateX(59rem) translateY(-7rem);
+  background-color: green;
+  position: absolute;
+  right: 14px;
+  bottom: 77px;
 }
 
 .player-piece.red{
   background-color: red;
-  transform: translateX(89rem) translateY(-9.5rem);
+  position: absolute;
+  right: 60px;
+  bottom: 77px;
 }
 
 .square {
