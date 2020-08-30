@@ -1,10 +1,13 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
-const PlayerPiece = ({color}) => {
+const PlayerPiece = ({color, right, bottom}) => {
+
+    // const [right, setRight] = useState(0);
+    // const [bottom, setBottom] = useState(0);
 
     return(
         <Fragment>
-            <div className={color === 'blue' ? 'player-piece blue' : 'player-piece red'}></div>
+            <div className={color === 'blue' ? 'player-piece blue' : 'player-piece red'} style={{right: right, bottom: bottom}}></div>
         </Fragment>
     );
 }

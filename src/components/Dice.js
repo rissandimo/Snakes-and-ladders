@@ -7,7 +7,7 @@ import img4 from "./../img/4.png";
 import img5 from "./../img/5.png";
 import img6 from "./../img/6.jpg";
 
-export default function Dice() {
+export default function Dice( {setPlayer1Position }) {
   const [getImg, setImg] = useState(img1);
   const number = () => {
     let number = Math.floor(Math.random() * (7 - 1)) + 1;
@@ -34,6 +34,9 @@ export default function Dice() {
         setImg(img6);
         break;
     }
+
+    // setPlayer1Position(1);
+    
   };
   return (
     <Fragment>

@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Square from "./Square";
 import Dice from "./Dice";
 import PlayerPiece from "./PlayerPiece";
 
 function Board() {
+
+  // State
+  const [player1Positon, setPlayer1Position] = useState(0);
+  const [player2Positon, setPlayer2Position] = useState(0);
+
+  // Event handlers
+  // const setPlayer1Position = (number) => {
+
+  // }
+
   return (
     <>
       <div id="board">
@@ -43,12 +53,15 @@ function Board() {
         <Square number="8" /> <Square number="6" />
         <Square number="5" /> <Square number="4" /> <Square number="3" />{" "}
         <Square number="2" /> <Square number="1" />
-      <PlayerPiece color="blue" />
-      <PlayerPiece color="red" />
+
+        <PlayerPiece color="blue" right='14px' bottom='77px' />
+        <PlayerPiece color="red" right='60px' bottom='77px' />
       </div>
 
       <div className="dice-container">
-        <Dice />
+        <Dice 
+        setPlayer1Position={setPlayer1Position}
+        setPlayer2Position={setPlayer2Position} />
       </div>
 
     </>

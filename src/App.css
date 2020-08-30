@@ -87,17 +87,13 @@
 }
 
 .player-piece.blue{
-  background-color: green;
+  background-color: blue;
   position: absolute;
-  right: 14px;
-  bottom: 77px;
 }
 
 .player-piece.red{
   background-color: red;
   position: absolute;
-  right: 60px;
-  bottom: 77px;
 }
 
 .square {
