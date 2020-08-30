@@ -7,11 +7,13 @@ import img4 from "./../img/4.png";
 import img5 from "./../img/5.png";
 import img6 from "./../img/6.jpg";
 
-export default function Dice( {setPlayer1Position }) {
+export default function Dice( { setDice, setp1bottom, setp1right, setp2bottom, setp2right, p1Active, p2Active, p1right, p12right }) {
+
   const [getImg, setImg] = useState(img1);
-  const number = () => {
+
+  const rollDice = () => {
     let number = Math.floor(Math.random() * (7 - 1)) + 1;
-    console.log(number);
+    
     switch (number) {
       case 1:
         setImg(img1);
@@ -35,12 +37,19 @@ export default function Dice( {setPlayer1Position }) {
         break;
     }
 
-    // setPlayer1Position(1);
+    if(p1Active){
+      const p1RightInt = parseInt(p1right.replace('rem', ''));
+      const updatedRight = p1RightInt + 6.2 + 'rem';
+      console.log(updatedRight);
+
+     setp1right(updatedRight);
+    }
+
     
   };
   return (
     <Fragment>
-    <button className="dice-logo" onClick={number}>Roll Dice</button>
+    <button className="dice-logo" onClick={rollDice}>Roll Dice</button>
     <div>
       <img className="dice" src={getImg}></img>
     </div>

@@ -6,14 +6,33 @@ import PlayerPiece from "./PlayerPiece";
 
 function Board() {
 
-  // State
-  const [player1Positon, setPlayer1Position] = useState(0);
-  const [player2Positon, setPlayer2Position] = useState(0);
+                  // State
 
-  // Event handlers
-  // const setPlayer1Position = (number) => {
+  // Player 1 Position
+  const [p1bottom, setp1bottom] = useState('77px');
+  const [p1right, setp1right] = useState('2rem');
+  
+  // Player 2 Position
+  const [p2bottom, setp2bottom] = useState(0);
+  const [p2right, setp2right] = useState(0);
 
-  // }
+  // Dice Rolled
+  const [dice, setDice] = useState(0);
+
+  // Active Players
+  const [p1Active, setP1Active] = useState(true);
+  const [p2Active, setP2Active] = useState(true);
+
+  const movePlayer = () => {
+    if(p1Active){
+      console.log("Player 1 active");
+    }else{
+      console.log("Player 2 active");
+    }
+  }
+
+  // setp1bottom('77px');
+  // setp1right('14px');
 
   return (
     <>
@@ -54,14 +73,22 @@ function Board() {
         <Square number="5" /> <Square number="4" /> <Square number="3" />{" "}
         <Square number="2" /> <Square number="1" />
 
-        <PlayerPiece color="blue" right='14px' bottom='77px' />
-        <PlayerPiece color="red" right='60px' bottom='77px' />
+        <PlayerPiece color="blue" player='player1' p1right={p1right} p1bottom={p1bottom} />
+        {/* <PlayerPiece color="red" player='player2' p2right='60px' p2bottom='77px' /> */}
       </div>
 
       <div className="dice-container">
         <Dice 
-        setPlayer1Position={setPlayer1Position}
-        setPlayer2Position={setPlayer2Position} />
+            setDice={setDice}
+            p1right={p1right}
+            p2right={p2right}
+              p1Active={true}
+              p2Active={false}
+              setp1bottom={setp1bottom}
+              setp1right={setp1right}
+              setp2bottom={setp2bottom}
+              setp2right={setp2right}
+               />
       </div>
 
     </>
