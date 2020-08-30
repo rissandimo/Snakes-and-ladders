@@ -80,11 +80,19 @@
 }
 
 .player-piece{
-  background-color: blue;
   border-radius: 50%;
   height: 25px;
   width: 25px;
-  transform: translateX(61rem) translateY(-7rem);
+}
+
+.player-piece.blue{
+  background-color: blue;
+  transform: translateX(59rem) translateY(-7rem);
+}
+
+.player-piece.red{
+  background-color: red;
+  transform: translateX(89rem) translateY(-9.5rem);
 }
 
 .square {

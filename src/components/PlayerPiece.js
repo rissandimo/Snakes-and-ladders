@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const PlayerPiece = () => {
+const PlayerPiece = ({color}) => {
+
     return(
-        <div className="player-piece"></div>
+        <Fragment>
+            <div className={color === 'blue' ? 'player-piece blue' : 'player-piece red'}></div>
+        </Fragment>
     );
 }
 

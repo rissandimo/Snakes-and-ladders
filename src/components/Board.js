@@ -49,7 +49,8 @@ function Board() {
         <Dice />
       </div>
 
-      <PlayerPiece />
+      <PlayerPiece color="blue" />
+      <PlayerPiece color="red" />
     </>
   );
 }
