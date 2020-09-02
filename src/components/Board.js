@@ -10,7 +10,7 @@ function Board() {
 
   // Player 1 Position
   const [p1bottom, setp1bottom] = useState('77px');
-  const [p1right, setp1right] = useState('2rem');
+  const [p1right, setp1right] = useState('0.5rem');
   
   // Player 2 Position
   const [p2bottom, setp2bottom] = useState(0);

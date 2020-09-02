@@ -10,6 +10,7 @@ import img6 from "./../img/6.jpg";
 export default function Dice( { setDice, setp1bottom, setp1right, setp2bottom, setp2right, p1Active, p2Active, p1right, p12right }) {
 
   const [getImg, setImg] = useState(img1);
+  const [p1Right, setp1Right] = useState(0.5);
 
   const rollDice = () => {
     let number = Math.floor(Math.random() * (7 - 1)) + 1;
@@ -37,14 +38,15 @@ export default function Dice( { setDice, setp1bottom, setp1right, setp2bottom, s
         break;
     }
 
-    if(p1Active){
-      const p1RightInt = parseInt(p1right.replace('rem', ''));
-      const updatedRight = p1RightInt + 6.2 + 'rem';
+        if(p1Active){
+      
+      console.log(p1Right);
+      setp1Right(p1Right + 6.5)
+      const updatedRight = p1Right + 'rem';
       console.log(updatedRight);
 
      setp1right(updatedRight);
     }
-
     
   };
   return (
